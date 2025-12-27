@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live Site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/ArchieK9/skilled-elearning-landing)
+- Live Site URL: [Live Site URL](https://skilled-elearning-five.vercel.app/)
 
 ## My process
 
@@ -55,5 +55,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@ArchieK9](https://www.frontendmentor.io/profile/ArchieK9)
+- Twitter - [@ArchieJK9](https://x.com/ArchieJK9)
