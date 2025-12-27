@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+  --blue-900: #13183F;
+  --blue-600: #666CA3;
+  --pink-600: #F74780;
+  --pink-300: #FFA7C3;
+  --gray: #83869A;
+  --white: #FFFFFF;
+  --gradient-pink-1: #F02AA6;
+  --gradient-pink-2: #FF6F48;
+  --gradient-purple-1: #4851FF;
+  --gradient-purple-2: #F02AA6;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
