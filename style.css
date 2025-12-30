@@ -29,12 +29,21 @@ h2,
 h3 {
   margin: 0;
   line-height: 1.2;
+  font-weight: 800;
 }
 
-p {
+p,a {
   line-height: 1.5;
   color: var(--gray);
   font-size: 18px;
+  text-decoration: none;
+  font-weight: medium;
+}
+
+a{
+  font-weight: bold;
+  color: var(--pink-600);
+  margin-top: auto;
 }
 
 img {
@@ -42,7 +51,7 @@ img {
   max-width: 100%;
 }
 
-nav {
+nav, footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +106,6 @@ header {
 h1 {
   color: var(--blue-900);
   font-size: 56px;
-  font-weight: 800;
   margin-bottom: 1.5rem;
 }
 
@@ -115,22 +123,73 @@ main{
 
 .courses{
   padding-block: 1.75rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  column-gap: 2rem;
+  row-gap: 3.5rem;
 }
 
 .courses div{
-  width: calc(100% / 3);
+  padding: 4rem 2rem;
+  box-shadow: 0px 5px 15px 0px var(--gray);
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
+.courses div p{
+  margin-block: 1.5rem;
+}
+
+.courses div img{
+  position: absolute;
+  top: -7.5%;
+}
+
+.courses div:nth-child(1){
+  background: var(--gradient-pink);
+}
+
+h2{
+  font-size: 32px;
+  color: var(--white);
+}
+
+h3{
+  font-size: 24px;
+}
+
+footer{
+  background: var(--blue-900);
+  margin-inline: -10rem;  
+  padding-inline: 10rem;
+}
+
+footer button{
+  background: var(--gradient-purple);
+}
+
+footer button:hover{
+  opacity: 0.5;
+}
 
 @media (max-width: 1024px) {
   body {
     padding-inline: 2.75rem;
   }
+
+  footer{
+    margin-inline: -2.75rem;
+    padding-inline: 2.75rem;
+  }
+
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .logo {
     width: 80px;
     height: 20px;
@@ -152,6 +211,14 @@ main{
     font-size: 40px;
   }
 
+  h2{
+    font-size: 24px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
   picture {
     translate: 47% -25%;
   }
@@ -160,6 +227,15 @@ main{
 @media (max-width: 425px) {
   body {
     padding-inline: 1.25rem;
+  }
+
+  footer{
+    margin-inline: -1.25rem;
+    padding-inline: 1.25rem;
+  }
+
+  p{
+    font-size: 16px;
   }
 
   button {
@@ -177,9 +253,9 @@ main{
     padding-block: 0;
   }
 
-    .intro p {
-      width: auto;
-    }
+  .intro p {
+    width: auto;
+  }
 
   picture {
     display: flex;
@@ -192,6 +268,14 @@ main{
 
   picture img{
     max-width: 133%;
+  }
+
+  .courses {
+    grid-template-columns: 1fr;
+  }
+
+  .courses div:nth-child(1){
+    padding: 2rem;
   }
 }
 
