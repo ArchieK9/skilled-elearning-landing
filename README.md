@@ -10,7 +10,7 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  -[Key Features](#key-features)
 - [Author](#author)
 
 ## Overview
@@ -21,6 +21,7 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
+- Experience a responsive hero image that adapts correctly across breakpoints
 
 ### Screenshot
 
@@ -40,18 +41,18 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Responsive images using ``` <picture> ``` and media queries
+- Google Fonts (Plus Jakarta Sans)
 
-### What I learned
+### Key Features
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+- Responsive layout using CSS Grid and Flexbox
+- Mobile-first design, scaling up smoothly for tablet and desktop
+- Responsive hero image using the ``` <picture> ``` element with multiple breakpoints
+- Reusable design tokens via CSS variables for colors and gradients
+- Accessible and semantic HTML structure
+- Hover and interaction states for buttons and links
+- Consistent spacing and alignment across breakpoints
 
 ## Author
 
